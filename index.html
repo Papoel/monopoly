@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/monopoly.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Monopoly</title>
+</head>
+<body>
+    
+    <div class="table">
+        <div class="board">
+            <!-- Partie centrale du plateau -->
+            <div class="center">
+                <div class="community-chest-deck">
+                    <h2 class="label">Caisse Communauté</h2>
+                    <div class="deck">
+                        <div class="image-container">
+                            <img src="images/community-icon.png" alt="" class="community-img">
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title">MONOPOLY</h1>
+                <div class="chance-deck">
+                    <h2 class="label">Chance</h2>
+                    <div class="deck"></div>
+                </div>
+            </div>
+    
+            <!-- Case Départ -->
+            <div class="space corner start">
+                <div class="container">
+                    <div class="start-word">D&Egrave;PART</div>
+                    <div class="start-instructions">Recevez 200 <s>M</s> à chaque fois que vous passez ici</div>
+                </div>
+                <div class="arrow fa fa-arrow-left"></div>
+            </div>
+    
+            <!-- Ligne 1 (Propriété de couleur bleu ciel et Marron) -->
+            <div class="row horizontal-row bottom-row">
+                <!-- Avenue de la République -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar light-blue"></div>
+                        <div class="name">Avenue de la République</div>
+                        <div class="price"><s>M</s>120</div>
+                    </div>
+                </div>
+                <!-- Rue de Courcelles -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar light-blue"></div>
+                        <div class="name">Rue de Courcelles</div>
+                        <div class="price"><s>M</s>100</div>
+                    </div>
+                </div>
+                <!-- Carte Chance n°1 -->
+                <div class="space chance">
+                    <div class="container">
+                        <div class="name">Chance</div>
+                        <i class="drawing fa fa-question"></i>
+                    </div>
+                </div>
+                <!-- Rue de Vaugirard -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar light-blue"></div>
+                        <div class="name">Rue de Vaugirard</div>
+                        <div class="price"><s>M</s>100</div>
+                    </div>
+                </div>
+                <!-- Gare Montparnasse -->
+                <div class="space railroad">
+                    <div class="container">
+                        <div class="name">
+                            Gare <br> 
+                            <smaller class="">Montparnasse</smaller>
+                        </div>
+                        <i class="drawing fa fa-subway"></i>
+                        <div class="price"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Impôt sur le revenu -->
+                <div class="space fee income-tax">
+                    <div class="container">
+                        <div class="name p-0">Impôt sur le revenu</div>
+                        <i class="diamond fa-regular fa-money-bill-1"></i>
+                        <div class="instructions"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Rue Lecourbe -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar brown"></div>
+                        <div class="name">Rue Lecourbe</div>
+                        <div class="price"><s>M</s>50</div>
+                    </div>
+                </div>
+                <!-- Caisse de Communauté n°1 -->
+                <div class="space community-chest">
+                    <div class="container">
+                        <div class="name">Caisse de communauté</div>
+                        <div class="image-container">
+                            <img src="images/community-icon.png" alt="Caisse de communauté" class="community-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Boulevard de Belleville -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar brown"></div>
+                        <div class="name three-line-name">Boulevard<br>de Belleville</div>
+                        <div class="price"><s>M</s>50</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Prison -->
+            <div class="space corner jail">
+                <div class="just">Simple</div>
+                <div class="drawing">
+                    <div class="container">
+                        <div class="name fw-bold"><smaller>En</smaller></div>
+                        <div class="window">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <i class="person fa fa-frown-o"></i>
+                        </div>
+                        <div class="name fw-bold"><smaller>Prison</smaller></div>
+                    </div>
+                </div>
+                <div class="visiting">Visite</div>
+            </div>
+    
+            <!-- Ligne 2 (Propriété de couleur Rose et Orange) -->
+            <div class="row vertical-row left-row">
+                <!-- Place Pigalle -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar orange"></div>
+                        <div class="name">Place Pigalle</div>
+                        <div class="price"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Boulevard Saint Michel -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar orange"></div>
+                        <div class="name">Boulevard <br>Saint-Michel</div>
+                        <div class="price"><s>M</s>180</div>
+                    </div>
+                </div>
+                <!-- Caisse de Communauté n°2 -->
+                <div class="space community-chest">
+                    <div class="container">
+                        <div class="name">Caisse de communauté</div>
+                        <div class="image-container">
+                            <img src="images/community-icon.png" alt="Caisse de communauté" class="community-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Avenue Mozart -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar orange"></div>
+                        <div class="name">Avenue Mozart</div>
+                        <div class="price"><s>M</s>180</div>
+                    </div>
+                </div>
+                <!-- Gare de Lyon -->
+                <div class="space railroad">
+                    <div class="container">
+                        <div class="name long-name">Gare de Lyon</div>
+                        <i class="drawing fa fa-subway"></i>
+                        <div class="price"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Rue de Paradis -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar purple"></div>
+                        <div class="name">Rue de Paradis</div>
+                        <div class="price"><s>M</s>160</div>
+                    </div>
+                </div>
+                <!-- Avenue de Neuilly -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar purple"></div>
+                        <div class="name">Avenue de Neuilly</div>
+                        <div class="price"><s>M</s>140</div>
+                    </div>
+                </div>
+                <!-- Compagnie d'électricité -->
+                <div class="space utility electric-company">
+                    <div class="container">
+                        <div class="name">EDF</div>
+                        <i class="drawing fa-regular fa-lightbulb"></i>
+                        <div class="price"><s>M</s>150</div>
+                    </div>
+                </div>
+                <!-- Boulevard de la Villette -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar purple"></div>
+                        <div class="name">Boulevard <br> de la Villette</div>
+                        <div class="price"><s>M</s>140</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Parc Gratuit -->
+            <div class="space corner free-parking">
+                <div class="container">
+                    <div class="name">Parc</div>
+                    <i class="drawing fa-solid fa-hand-holding-dollar"></i>
+                    <!-- <i class="drawing fa fa-lock-open"></i> -->
+                    <div class="name">Gratuit</div>
+                </div>
+            </div>
+    
+            <!-- Ligne 3 (Propriété de couleur Rouge et Jaune) -->
+            <div class="row horizontal-row top-row">
+                <!-- Avenue Matignon -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar red"></div>
+                        <div class="name">Avenue Matignon</div>
+                        <div class="price"><s>M</s>220</div>
+                    </div>
+                </div>
+                <!-- Carte Chance n°2 -->
+                <div class="space chance">
+                    <div class="container">
+                        <div class="name">Chance</div>
+                        <i class="drawing fa fa-question blue"></i>
+                    </div>
+                </div>
+                <!-- Boulevard Malesherbes-->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar red"></div>
+                        <div class="name">Boulevard Malesherbes</div>
+                        <div class="price"><s>M</s>220</div>
+                    </div>
+                </div>
+                <!-- Avenue Henri Martin -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar red"></div>
+                        <div class="name">Avenue <br>Henri-Martin</div>
+                        <div class="price"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Gare du Nord -->
+                <div class="space railroad">
+                    <div class="container">
+                        <div class="name">Gare du Nord</div>
+                        <i class="drawing fa fa-subway"></i>
+                        <div class="price"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Faubourg Saint-Honoré -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar yellow"></div>
+                        <div class="name">Faubourg Saint-Honoré</div>
+                        <div class="price"><s>M</s>260</div>
+                    </div>
+                </div>
+                <!-- Place de la Bourse -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar yellow"></div>
+                        <div class="name">Place de <br>la Bourse</div>
+                        <div class="price"><s>M</s>260</div>
+                    </div>
+                </div>
+                <!-- Compagnie des eaux -->
+                <div class="space utility waterworks">
+                    <div class="container">
+                        <div class="name">H2O At Home</div>
+                        <i class="drawing fa-solid fa-dove"></i>
+                        <div class="price"><s>M</s>120</div>
+                    </div>
+                </div>
+                <!-- Rue La Fayette -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar yellow"></div>
+                        <div class="name">Rue La Fayette</div>
+                        <div class="price"><s>M</s>280</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Aller en prison -->
+            <div class="space corner go-to-jail">
+                <div class="container">
+                    <div class="name">Va en</div>
+                    <i class="drawing fa-solid fa-handcuffs"></i>
+                    <div class="name">Prison</div>
+                </div>
+            </div>
+    
+            <!-- Ligne 4 (Propriété de couleur Vert et Bleu foncé) -->
+            <div class="row vertical-row right-row">
+                <!-- Avenue de Breteuil -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar green"></div>
+                        <div class="name">Avenue de Breteuil</div>
+                        <div class="price"><s>M</s>300</div>
+                    </div>
+                </div>
+                <!-- Avenue Foch -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar green"></div>
+                        <div class="name three-line-name">Avenue Foch</div>
+                        <div class="price"><s>M</s>300</div>
+                    </div>
+                </div>
+                <!-- Caisse de Communauté n°3 -->
+                <div class="space community-chest">
+                    <div class="container">
+                        <div class="name">Caisse de communauté</div>
+                        <div class="image-container">
+                            <img src="images/community-icon.png" alt="Caisse de communauté" class="community-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Boulevard des Capucines -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar green"></div>
+                        <div class="name long-name">Boulevard <br><smaller>des Capucines</smaller></div>
+                        <div class="price"><s>M</s>320</div>
+                    </div>
+                </div>
+                <!-- Gare Saint-Lazare -->
+                <div class="space railroad">
+                    <div class="container">
+                        <div class="name">Gare <br>Saint-Lazare</div>
+                        <i class="drawing fa fa-subway"></i>
+                        <div class="price"><s>M</s>200</div>
+                    </div>
+                </div>
+                <!-- Carte Chance n°3 -->
+                <div class="space chance">
+                    <div class="container">
+                        <div class="name">Chance</div>
+                        <i class="drawing fa fa-question"></i>
+                    </div>
+                </div>
+                <!-- Avenue des Champs-Elysées -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar dark-blue"></div>
+                        <div class="name">Avenue <br><smaller>Champs-Elysees</smaller></div>
+                        <div class="price"><s>M</s>350</div>
+                    </div>
+                </div>
+                <!-- Taxe de luxe -->
+                <div class="space fee luxury-tax">
+                    <div class="container">
+                        <div class="name">Taxe <br>de luxe</div>
+                        <i class="drawing fa-solid fa-gem"></i>
+                        <div class="instructions"><s>M</s>100</div>
+                    </div>
+                </div>
+                <!-- Rue de la Paix -->
+                <div class="space property">
+                    <div class="container">
+                        <div class="color-bar dark-blue"></div>
+                        <div class="name">Rue<br>de la paix</div>
+                        <div class="price"><s>M</s>400</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
